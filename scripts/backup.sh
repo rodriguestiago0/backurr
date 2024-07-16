@@ -5,12 +5,7 @@
 
 function upload() {  
     # calculate files
-
     mapfile -t RCLONE_EXISTING_FILES_LIST < <(rclone ${RCLONE_GLOBAL_FLAG} lsf -R "${RCLONE_REMOTE_X}" --files-only)
-    for RCLONE_EXISTING_FILE in "${RCLONE_EXISTING_FILES_LIST[@]}"
-    do
-       color yellow "file \"${RCLONE_EXISTING_FILE}\""
-    done
 
     # upload
     local FILENAME
