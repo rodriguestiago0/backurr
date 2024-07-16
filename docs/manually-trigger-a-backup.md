@@ -15,10 +15,10 @@ Previously, performing an immediate backup required overwriting the entrypoint o
 ```shell
 docker run \
   --rm \
-  --name actualbudget-backup \
-  --mount type=volume,source=actualbudget-rclone-data,target=/config/ \
+  --name backurr \
+  --mount type=volume,source=backurr-rclone-data,target=/config/ \
   -e ... \
-  rodriguestiago0/actualbudget-backup:latest backup
+  rodriguestiago0/backurr:latest backup
 ```
 
 You also need to mount the rclone config file and set the environment variables.

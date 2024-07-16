@@ -12,7 +12,7 @@ You can achieve this by setting the following environment variables.
 
 > **Don't forget to add the new Rclone remote before running with the new environment variables.**
 > 
-> Find more information on how to configure Rclone [here](https://github.com/rodriguestiago0/actualbudget-backup#configure-rclone-%EF%B8%8F-must-read-%EF%B8%8F).
+> Find more information on how to configure Rclone [here](https://github.com/rodriguestiago0/backurr#configure-rclone-%EF%B8%8F-must-read-%EF%B8%8F).
 
 To set additional remote destinations, use the environment variables `RCLONE_REMOTE_NAME_N` and `RCLONE_REMOTE_DIR_N`, where:
 
@@ -31,14 +31,14 @@ Note that if the serial number is not consecutive or the value is empty, the scr
 ...
 environment:
   # they have default values
-  # RCLONE_REMOTE_NAME: ActualBudgetBackup
-  # RCLONE_REMOTE_DIR: /ActualBudgetBackup/
+  # RCLONE_REMOTE_NAME: Backurr
+  # RCLONE_REMOTE_DIR: /Backurr/
   RCLONE_REMOTE_NAME_1: extraRemoteName1
   RCLONE_REMOTE_DIR_1: extraRemoteDir1
 ...
 ```
 
-With the above example, both remote destinations are available: `ActualBudgetBackup:/ActualBudgetBackup/` and `extraRemoteName1:extraRemoteDir1`.
+With the above example, both remote destinations are available: `Backurr:/Backurr/` and `extraRemoteName1:extraRemoteDir1`.
 
 <br>
 
