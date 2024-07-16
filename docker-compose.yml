@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  backup:
+    image: rodriguestiago0/backuprr:latest
+    restart: always
+    # environment:
+    #   RCLONE_REMOTE_NAME: 'Backurr'
+    #   RCLONE_REMOTE_DIR: '/Backurr/'
+    #   RCLONE_GLOBAL_FLAG: ''
+    #   CRON: '0 0 * * *'
+    #   BACKUP_KEEP_DAYS: 0
+    #   TIMEZONE: 'UTC'
+    volumes:
+      - backurr-rclone-data:/config/
+      - /path/to/radarr/backup:/backup/radarr
+      - /path/to/sonarr/backup:/backup/sonarr
+      #- /path/to/*rr/backup:/backup/*rr
+      #- /path/to/env:/.env
