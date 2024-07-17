@@ -1,4 +1,4 @@
-# Buckurr
+# Backurr
 
 Docker containers for rr backup to remote.
 
